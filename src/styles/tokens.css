@@ -1,0 +1,56 @@
+/* Design tokens — "night cinema, bound like a book".
+   Ground = deep bookcloth ink; two thread colours = the two branches of a choice. */
+:root {
+  /* Ground + surfaces */
+  --ink-900: #0f0c14;   /* page */
+  --ink-800: #17131e;   /* raised strip (header on scroll, footer) */
+  --ink-700: #221c2b;   /* cards, inputs */
+  --ink-600: #2f2839;   /* hairlines, hover fill */
+
+  /* Text */
+  --paper: #efe7da;     /* primary text */
+  --paper-dim: #b3a9bb; /* secondary text (≥4.5:1 on ink-900) */
+  --paper-faint: #857b8f; /* large/meta only */
+
+  /* Threads — the chosen path and the path not taken */
+  --thread-gold: #f2b43c;       /* chosen path, primary action */
+  --thread-gold-hover: #ffc862;
+  --thread-teal: #46b6a6;       /* the other branch, secondary accents */
+  --on-gold: #1b1206;
+
+  /* Type */
+  --font-display: 'Bodoni Moda', 'Didot', 'Bodoni 72', serif;
+  --font-body: 'Hanken Grotesk', system-ui, sans-serif;
+
+  --step--1: clamp(0.8rem, 0.78rem + 0.1vw, 0.875rem);
+  --step-0: clamp(1rem, 0.96rem + 0.2vw, 1.0625rem);
+  --step-1: clamp(1.2rem, 1.1rem + 0.5vw, 1.4rem);
+  --step-2: clamp(1.5rem, 1.3rem + 1vw, 2rem);
+  --step-3: clamp(2rem, 1.6rem + 2vw, 3rem);
+  --step-4: clamp(2.6rem, 1.8rem + 4vw, 5.25rem);
+
+  /* Space (4px base) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+
+  /* Page gutter: 16px on phones, grows to 4vw */
+  --gutter: max(1rem, 4vw);
+
+  /* Shape + depth */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --shadow-lift: 0 12px 32px -8px rgb(0 0 0 / 0.6);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 160ms;
+  --dur-med: 320ms;
+
+  --header-h: 4rem;
+}

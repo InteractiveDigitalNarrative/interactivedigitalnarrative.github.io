@@ -1,0 +1,8 @@
+.page-main {
+  min-height: 60dvh;
+  padding: var(--space-7) var(--gutter) 0;
+}
+
+.placeholder-note {
+  color: var(--paper-dim);
+}

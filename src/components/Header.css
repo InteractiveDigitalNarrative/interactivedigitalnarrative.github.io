@@ -1,0 +1,70 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  height: var(--header-h);
+  padding: 0 var(--gutter);
+  background: linear-gradient(to bottom, rgb(15 12 20 / 0.85), rgb(15 12 20 / 0));
+  transition:
+    background-color var(--dur-med) var(--ease-out),
+    box-shadow var(--dur-med) var(--ease-out);
+}
+
+.site-header.is-scrolled {
+  background-color: var(--ink-800);
+  box-shadow: 0 8px 24px -12px rgb(0 0 0 / 0.7);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  text-decoration: none;
+}
+
+.brand-name {
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.brand-name em {
+  font-weight: 400;
+  color: var(--paper-dim);
+}
+
+.header-nav {
+  display: flex;
+  gap: var(--space-5);
+  margin-right: auto;
+}
+
+.header-nav a {
+  color: var(--paper-dim);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--dur-fast) var(--ease-out);
+}
+
+.header-nav a:hover {
+  color: var(--paper);
+}
+
+.header-signin {
+  min-height: 40px;
+  padding: 0 var(--space-4);
+}
+
+@media (max-width: 480px) {
+  .header-nav {
+    display: none;
+  }
+
+  .brand {
+    margin-right: auto;
+  }
+}

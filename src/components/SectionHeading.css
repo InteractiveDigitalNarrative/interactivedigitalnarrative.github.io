@@ -1,0 +1,47 @@
+.section-heading {
+  display: grid;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.section-heading h2 {
+  font-size: var(--step-2);
+}
+
+.branch-rule {
+  width: min(240px, 60vw);
+  height: auto;
+  overflow: visible;
+}
+
+.branch-rule path {
+  stroke-width: 1.5;
+  stroke-linecap: round;
+}
+
+.branch-rule-trunk {
+  stroke: var(--ink-600);
+}
+
+.branch-rule-taken {
+  stroke: var(--thread-gold);
+  stroke-dasharray: 100;
+  stroke-dashoffset: 0;
+  animation: branch-draw 900ms var(--ease-out) 200ms both;
+}
+
+.branch-rule-other {
+  stroke: var(--thread-teal);
+  opacity: 0.45;
+  stroke-dasharray: 3 5;
+}
+
+.branch-rule-knot {
+  fill: var(--paper);
+}
+
+@keyframes branch-draw {
+  from {
+    stroke-dashoffset: 100;
+  }
+}
