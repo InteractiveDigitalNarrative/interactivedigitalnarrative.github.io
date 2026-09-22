@@ -19,8 +19,8 @@
 .shelf-arrows button {
   display: grid;
   place-items: center;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border: 1px solid var(--ink-600);
   border-radius: 50%;
   background: var(--ink-800);

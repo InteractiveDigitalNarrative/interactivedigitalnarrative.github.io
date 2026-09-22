@@ -14,10 +14,8 @@
   border: 1px solid var(--thread-teal);
   border-radius: var(--radius-sm);
   color: var(--thread-teal);
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
 }
 
 .sign-in-step {
