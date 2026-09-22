@@ -38,7 +38,12 @@ function StoryModal({ story, themes, progress, signedIn, onSignIn, onClose }) {
           <div className="modal-body">
             <h2 id="story-modal-title">{story.title}</h2>
             {story.tagline && <p className="modal-tagline">{story.tagline}</p>}
-            {story.synopsis && <p className="modal-synopsis">{story.synopsis}</p>}
+            {/* Blank line in the synopsis = new paragraph */}
+            {story.synopsis?.split('\n\n').map((para) => (
+              <p key={para} className="modal-synopsis">
+                {para}
+              </p>
+            ))}
             <SkillTags skills={story.skills} />
 
             <ul className="modal-facts">
