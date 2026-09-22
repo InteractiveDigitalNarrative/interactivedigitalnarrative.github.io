@@ -35,7 +35,7 @@ html:has(.app-dialog[open]) {
 }
 
 .app-dialog::backdrop {
-  background: rgb(8 6 12 / 0.75);
+  background: rgb(6 9 13 / 0.75);
   backdrop-filter: blur(4px);
 }
 
@@ -50,7 +50,7 @@ html:has(.app-dialog[open]) {
   height: 44px;
   border: 1px solid var(--ink-600);
   border-radius: 50%;
-  background: rgb(15 12 20 / 0.8);
+  background: rgb(12 17 23 / 0.8);
   cursor: pointer;
   transition: border-color var(--dur-fast) var(--ease-out);
 }

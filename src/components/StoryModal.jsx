@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react'
 import CheckIcon from './CheckIcon.jsx'
+import SkillTags from './SkillTags.jsx'
 import { endingsWord, isBranching, isCompleted, playLabel } from '../lib/stories.js'
 import './Dialog.css'
 import './StoryModal.css'
@@ -38,6 +39,7 @@ function StoryModal({ story, themes, progress, signedIn, onSignIn, onClose }) {
             <h2 id="story-modal-title">{story.title}</h2>
             <p className="modal-tagline">{story.tagline}</p>
             <p className="modal-synopsis">{story.synopsis}</p>
+            <SkillTags skills={story.skills} />
 
             <ul className="modal-facts">
               <li className={soon ? '' : 'is-playable'}>{soon ? 'Coming soon' : 'Playable now'}</li>

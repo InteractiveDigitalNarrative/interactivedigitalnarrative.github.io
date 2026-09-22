@@ -1,6 +1,6 @@
-# IDN Library (working name)
+# Crisis Preparedness Library
 
-Landing page for our Interactive Digital Narratives.
+Landing page for our interactive crisis-preparedness stories (Interactive Digital Narratives).
 
 | Item | Value |
 |---|---|

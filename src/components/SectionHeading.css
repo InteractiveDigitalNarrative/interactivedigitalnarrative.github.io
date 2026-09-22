@@ -1,7 +1,6 @@
-/* Shrinks to the heading's width so the rule matches the text */
 .section-heading {
-  display: inline-grid;
-  justify-self: start;
+  display: grid;
+  justify-items: start;
   gap: var(--space-2);
   margin-bottom: var(--space-4);
 }
@@ -10,29 +9,22 @@
   font-size: var(--step-2);
 }
 
-.heading-rule {
-  display: flex;
-  align-items: center;
-  gap: var(--space-2);
-}
-
-.heading-rule svg {
-  flex: none;
-  fill: none;
-  stroke: var(--thread-gold);
-  stroke-width: 1.25;
-}
-
-.heading-rule-line {
-  flex: 1;
-  height: 1px;
-  background: linear-gradient(to right, var(--thread-gold), var(--ink-600) 60%);
+.heading-bar {
+  width: 2.5rem;
+  height: 4px;
+  background: var(--signal);
   transform-origin: left;
-  animation: rule-draw 900ms var(--ease-out) 200ms both;
+  animation: bar-draw 700ms var(--ease-out) 200ms both;
 }
 
-@keyframes rule-draw {
+@keyframes bar-draw {
   from {
     transform: scaleX(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heading-bar {
+    animation: none;
   }
 }

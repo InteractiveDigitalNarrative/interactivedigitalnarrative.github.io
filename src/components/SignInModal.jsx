@@ -127,7 +127,7 @@ function MailIcon() {
   return (
     <svg className="mail-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
       <rect x="6" y="12" width="36" height="26" rx="3" stroke="var(--paper-dim)" strokeWidth="2" />
-      <path d="M7 14l17 13 17-13" stroke="var(--thread-gold)" strokeWidth="2" strokeLinejoin="round" />
+      <path d="M7 14l17 13 17-13" stroke="var(--signal)" strokeWidth="2" strokeLinejoin="round" />
     </svg>
   )
 }

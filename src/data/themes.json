@@ -1,7 +1,8 @@
 {
-  "emergency-prep": "Emergency prep",
-  "climate": "Climate",
-  "health": "Health",
-  "digital-safety": "Digital safety",
+  "storms-floods": "Storms & floods",
+  "heat": "Heat",
+  "power-water": "Power & water outages",
+  "health": "Health emergencies",
+  "scams-cyber": "Scams & cyber",
   "community": "Community"
 }

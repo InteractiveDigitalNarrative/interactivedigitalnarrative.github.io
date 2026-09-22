@@ -72,9 +72,9 @@ function App() {
           </Shelf>
           <Shelf
             id="shelf-theme"
-            title="By theme"
+            title="Browse by crisis"
             controls={
-              <div className="chip-row" role="group" aria-label="Filter by theme">
+              <div className="chip-row" role="group" aria-label="Filter by crisis type">
                 <button type="button" className="chip" aria-pressed={theme === null} onClick={() => setTheme(null)}>
                   All
                 </button>

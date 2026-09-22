@@ -1,25 +1,27 @@
-/* Design tokens — "night cinema, bound like a book".
-   Ground = deep bookcloth ink; two thread colours = the two branches of a choice. */
+/* Design tokens — "civil-protection signage".
+   Ground = night-navy; one signal colour (safety orange) for action and alerts,
+   one calm blue for status and progress. */
 :root {
   /* Ground + surfaces */
-  --ink-900: #0f0c14;   /* page */
-  --ink-800: #17131e;   /* raised strip (header on scroll, footer) */
-  --ink-700: #221c2b;   /* cards, inputs */
-  --ink-600: #2f2839;   /* hairlines, hover fill */
+  --ink-900: #0c1117;   /* page */
+  --ink-800: #131b24;   /* raised strip (header on scroll, footer) */
+  --ink-700: #1c2632;   /* cards, inputs */
+  --ink-600: #2a3644;   /* hairlines, hover fill */
 
   /* Text */
-  --paper: #efe7da;     /* primary text */
-  --paper-dim: #b3a9bb; /* secondary text (≥4.5:1 on ink-900) */
-  --paper-faint: #857b8f; /* large/meta only */
+  --paper: #eef2f5;     /* primary text */
+  --paper-dim: #a9b5c1; /* secondary text (≥4.5:1 on ink-900) */
+  --paper-faint: #7e8a97; /* large/meta only */
 
-  /* Threads — the chosen path and the path not taken */
-  --thread-gold: #f2b43c;       /* chosen path, primary action */
-  --thread-gold-hover: #ffc862;
-  --thread-teal: #46b6a6;       /* the other branch, secondary accents */
-  --on-gold: #1b1206;
+  /* Signal = action + alert; calm = status + progress */
+  --signal: #ff7a1a;
+  --signal-hover: #ff9443;
+  --on-signal: #140a02;
+  --calm: #5aa9e6;
+  --go: #3fcf73;         /* "Playable now" = safe to go */
 
   /* Type */
-  --font-display: 'Fraunces', Georgia, serif;
+  --font-display: 'Archivo', system-ui, sans-serif;
   --font-body: 'Hanken Grotesk', system-ui, sans-serif;
 
   --step--1: clamp(0.8rem, 0.78rem + 0.1vw, 0.875rem);

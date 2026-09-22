@@ -7,7 +7,7 @@
   gap: var(--space-5);
   height: var(--header-h);
   padding: 0 var(--gutter);
-  background: linear-gradient(to bottom, rgb(15 12 20 / 0.85), rgb(15 12 20 / 0));
+  background: linear-gradient(to bottom, rgb(12 17 23 / 0.85), rgb(12 17 23 / 0));
   transition:
     background-color var(--dur-med) var(--ease-out),
     box-shadow var(--dur-med) var(--ease-out);
@@ -27,12 +27,15 @@
 
 .brand-name {
   font-family: var(--font-display);
+  font-stretch: 88%;
   font-size: var(--step-1);
   font-weight: 700;
-  letter-spacing: 0.01em;
+  font-stretch: 88%;
+  white-space: nowrap;
 }
 
 .brand-name em {
+  font-style: normal;
   font-weight: 400;
   color: var(--paper-dim);
 }
@@ -67,6 +70,11 @@
   .brand {
     margin-right: auto;
   }
+
+  /* Full name is too long next to Sign in on phones */
+  .brand-long {
+    display: none;
+  }
 }
 
 /* Signed-in account button + menu (native popover) */
@@ -84,9 +92,10 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: var(--thread-teal);
+  background: var(--calm);
   color: var(--ink-900);
   font-family: var(--font-display);
+  font-stretch: 88%;
   font-size: var(--step-1);
   font-weight: 700;
 }
@@ -109,6 +118,7 @@
 .account-hello {
   margin-bottom: var(--space-2);
   font-family: var(--font-display);
+  font-stretch: 88%;
   font-size: var(--step-1);
   font-weight: 600;
 }

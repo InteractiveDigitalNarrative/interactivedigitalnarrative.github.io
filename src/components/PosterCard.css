@@ -52,12 +52,12 @@
 }
 
 .badge-new {
-  background: var(--thread-gold);
-  color: var(--on-gold);
+  background: var(--signal);
+  color: var(--on-signal);
 }
 
 .badge-soon {
-  background: rgb(15 12 20 / 0.8);
+  background: rgb(12 17 23 / 0.8);
   color: var(--paper);
   box-shadow: inset 0 0 0 1px var(--ink-600);
 }
@@ -66,13 +66,14 @@
   position: absolute;
   left: var(--space-2);
   bottom: var(--space-2);
-  background: rgb(15 12 20 / 0.85);
-  color: var(--thread-teal);
-  box-shadow: inset 0 0 0 1px rgb(70 182 166 / 0.4);
+  background: rgb(12 17 23 / 0.85);
+  color: var(--calm);
+  box-shadow: inset 0 0 0 1px rgb(90 169 230 / 0.4);
 }
 
 .poster-title {
   font-family: var(--font-display);
+  font-stretch: 88%;
   font-size: var(--step-1);
   font-weight: 600;
   line-height: 1.15;
@@ -81,6 +82,13 @@
 .poster-tagline {
   color: var(--paper-dim);
   font-size: var(--step--1);
+  line-height: 1.4;
+}
+
+.poster-skills {
+  color: var(--calm);
+  font-size: 0.75rem;
+  font-weight: 600;
   line-height: 1.4;
 }
 

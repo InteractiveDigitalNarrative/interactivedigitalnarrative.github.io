@@ -1,0 +1,19 @@
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1) var(--space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--calm);
+  font-size: var(--step--1);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* Middle dot between tags, drawn in CSS so screen readers skip it */
+.skill-tags li + li::before {
+  content: '·';
+  margin-right: var(--space-2);
+  color: var(--paper-faint);
+}

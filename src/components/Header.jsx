@@ -17,10 +17,10 @@ function Header({ session, profile, onSignIn, onProfile, onSignOut }) {
 
   return (
     <header className={`site-header ${scrolled ? 'is-scrolled' : ''}`}>
-      <a className="brand" href="/" aria-label="IDN Library home">
+      <a className="brand" href="/" aria-label="Crisis Preparedness Library home">
         <BranchMark />
         <span className="brand-name">
-          IDN <em>Library</em>
+          <span className="brand-long">Crisis </span>Preparedness <em>Library</em>
         </span>
       </a>
       <nav className="header-nav" aria-label="Main">

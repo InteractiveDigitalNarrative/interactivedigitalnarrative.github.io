@@ -52,15 +52,15 @@
 }
 
 .modal-facts .is-playable {
-  border-color: rgb(242 180 60 / 0.5);
-  color: var(--thread-gold);
+  border-color: rgb(63 207 115 / 0.5);
+  color: var(--go);
 }
 
 .modal-endings {
   display: flex;
   align-items: center;
   gap: var(--space-3);
-  color: var(--thread-teal);
+  color: var(--calm);
   font-size: var(--step--1);
   font-weight: 600;
 }
@@ -73,12 +73,12 @@
 .ending-dots span {
   width: 10px;
   height: 10px;
-  border: 1.5px solid var(--thread-teal);
+  border: 1.5px solid var(--calm);
   border-radius: 50%;
 }
 
 .ending-dots .is-found {
-  background: var(--thread-teal);
+  background: var(--calm);
 }
 
 .modal-actions {
@@ -97,7 +97,7 @@
   padding: 0;
   border: 0;
   background: none;
-  color: var(--thread-gold);
+  color: var(--signal);
   font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 3px;

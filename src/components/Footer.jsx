@@ -4,28 +4,29 @@ import './Footer.css'
 const EXPLORE = [
   ['Featured story', '#main'],
   ['New & coming soon', '#shelf-new'],
-  ['Browse by theme', '#shelf-theme'],
+  ['Browse by crisis', '#shelf-theme'],
 ]
 
 function Footer() {
   return (
     <footer className="site-footer">
-      {/* Chapter-end ornament: hairline, small diamond, hairline */}
+      {/* Signage rule: short orange bar, then a hairline */}
       <div className="footer-ornament" aria-hidden="true">
-        <span />
-        <svg width="14" height="14" viewBox="0 0 14 14">
-          <path d="M7 1.5 12.5 7 7 12.5 1.5 7z" fill="none" stroke="var(--thread-gold)" strokeWidth="1.25" />
-        </svg>
+        <span className="footer-bar" />
         <span />
       </div>
 
       <div className="footer-main">
         <div className="footer-statement">
           <p className="footer-line">
-            Stories you <em>step into.</em>
+            Prepare for the crisis <em>before it comes.</em>
           </p>
           <p className="footer-about">
-            IDN Library gathers interactive digital narratives: short stories you take part in, not just read.
+            Short interactive stories where you make the calls in a storm, a blackout or a heatwave, and learn what
+            keeps people safe.
+          </p>
+          <p className="footer-112">
+            In an emergency, call <a href="tel:112">112</a>
           </p>
         </div>
 
@@ -42,10 +43,10 @@ function Footer() {
       </div>
 
       <div className="footer-base">
-        <a className="footer-brand" href="/" aria-label="IDN Library home">
+        <a className="footer-brand" href="/" aria-label="Crisis Preparedness Library home">
           <BranchMark size={20} />
           <span>
-            IDN <em>Library</em>
+            Crisis Preparedness <em>Library</em>
           </span>
         </a>
         <p className="footer-demo">

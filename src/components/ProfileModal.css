@@ -44,7 +44,7 @@
 
 .field select:focus-visible {
   outline-offset: 0;
-  border-color: var(--thread-gold);
+  border-color: var(--signal);
 }
 
 .profile-actions {

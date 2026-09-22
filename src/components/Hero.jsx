@@ -1,3 +1,4 @@
+import SkillTags from './SkillTags.jsx'
 import { endingsWord, isBranching, playLabel } from '../lib/stories.js'
 import './Hero.css'
 
@@ -22,9 +23,11 @@ function Hero({ story, themeLabel, progress, onMoreInfo }) {
         />
       </div>
       <div className="hero-content">
+        <p className="hero-eyebrow">Prepare for the crisis before it comes</p>
         <h1 id="hero-title">{story.title}</h1>
         <p className="hero-tagline">{story.tagline}</p>
         <p className="hero-meta">{meta.join(' · ')}</p>
+        <SkillTags skills={story.skills} />
         <div className="hero-actions">
           <a className="btn btn-primary" href={story.url}>
             <PlayIcon />
