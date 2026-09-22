@@ -1,4 +1,4 @@
-import { endingsWord, isBranching } from '../lib/stories.js'
+import { endingsWord, isBranching, playLabel } from '../lib/stories.js'
 import './Hero.css'
 
 // Featured story: full-bleed key art with a slow zoom, title and actions.
@@ -28,7 +28,7 @@ function Hero({ story, themeLabel, progress, onMoreInfo }) {
         <div className="hero-actions">
           <a className="btn btn-primary" href={story.url}>
             <PlayIcon />
-            {progress?.status === 'in_progress' ? 'Continue' : 'Play'}
+            {playLabel(progress)}
           </a>
           <button type="button" className="btn btn-ghost" onClick={() => onMoreInfo(story)}>
             More info

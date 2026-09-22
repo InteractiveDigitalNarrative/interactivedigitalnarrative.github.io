@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 import CheckIcon from './CheckIcon.jsx'
-import { endingsWord, isBranching, isCompleted } from '../lib/stories.js'
+import { endingsWord, isBranching, isCompleted, playLabel } from '../lib/stories.js'
 import './Dialog.css'
 import './StoryModal.css'
 
@@ -79,7 +79,7 @@ function StoryModal({ story, themes, progress, signedIn, onSignIn, onClose }) {
                   <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
                     <path d="M4 2.5v11l9-5.5z" fill="currentColor" />
                   </svg>
-                  {progress?.status === 'in_progress' ? 'Continue' : 'Play'}
+                  {playLabel(progress)}
                 </a>
               )}
             </div>

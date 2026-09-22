@@ -5,4 +5,12 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/',
+  server: {
+    // Dev only: serve a locally running game under the same address, so the library
+    // and the game share browser storage like they will on the live site.
+    // Start the game's own dev server first (it runs on port 5173).
+    proxy: {
+      '/storm-alert': { target: 'http://localhost:5173', ws: true },
+    },
+  },
 })

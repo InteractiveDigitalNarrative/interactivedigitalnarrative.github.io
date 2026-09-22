@@ -7,3 +7,7 @@ export const isCompleted = (progress) => progress?.status === 'finished'
 
 // What a story calls its endings, e.g. Storm Alert's 4 "outcomes"
 export const endingsWord = (story) => story.endingsLabel ?? 'endings'
+
+// Main action label for a playable story, from the player's progress
+export const playLabel = (progress) =>
+  progress?.status === 'in_progress' ? 'Continue' : progress?.status === 'finished' ? 'Play again' : 'Play'
