@@ -1,0 +1,116 @@
+.shelf {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.shelf-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.shelf-arrows {
+  display: flex;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.shelf-arrows button {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--ink-600);
+  border-radius: 50%;
+  background: var(--ink-800);
+  cursor: pointer;
+  transition:
+    border-color var(--dur-fast) var(--ease-out),
+    opacity var(--dur-fast) var(--ease-out);
+}
+
+.shelf-arrows button:hover:not(:disabled) {
+  border-color: var(--paper-dim);
+}
+
+.shelf-arrows button:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+/* Touch devices swipe instead */
+@media (hover: none) {
+  .shelf-arrows {
+    display: none;
+  }
+}
+
+/* Row bleeds to the screen edges; cards snap to the gutter */
+.shelf-row {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: clamp(9.5rem, 38vw, 13.5rem);
+  gap: var(--space-4);
+  margin: 0 calc(-1 * var(--gutter));
+  padding: var(--space-2) var(--gutter) var(--space-4);
+  list-style: none;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: var(--gutter);
+  scrollbar-width: none;
+}
+
+.shelf-row::-webkit-scrollbar {
+  display: none;
+}
+
+.shelf-row > li {
+  scroll-snap-align: start;
+}
+
+/* Wide screens: bigger posters so rows read as a full library */
+@media (min-width: 1100px) {
+  .shelf-row {
+    grid-auto-columns: clamp(13.5rem, 16vw, 18rem);
+  }
+}
+
+/* Theme filter chips */
+.chip-row {
+  display: flex;
+  gap: var(--space-2);
+  margin: 0 calc(-1 * var(--gutter)) var(--space-2);
+  padding: 0 var(--gutter);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.chip {
+  flex: none;
+  min-height: 44px;
+  padding: 0 var(--space-4);
+  border: 1px solid var(--ink-600);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--paper-dim);
+  font-size: var(--step--1);
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background-color var(--dur-fast) var(--ease-out),
+    color var(--dur-fast) var(--ease-out),
+    border-color var(--dur-fast) var(--ease-out);
+}
+
+.chip:hover {
+  color: var(--paper);
+  border-color: var(--paper-faint);
+}
+
+.chip[aria-pressed='true'] {
+  background: var(--paper);
+  border-color: var(--paper);
+  color: var(--ink-900);
+}

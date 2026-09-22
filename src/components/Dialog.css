@@ -1,0 +1,61 @@
+/* Shared pop-up shell (native <dialog>). Page behind does not scroll. */
+html:has(.app-dialog[open]) {
+  overflow: hidden;
+}
+
+.app-dialog {
+  max-height: calc(100dvh - 2 * var(--space-4));
+  padding: 0;
+  border: 1px solid var(--ink-600);
+  border-radius: var(--radius-md);
+  background: var(--ink-800);
+  color: var(--paper);
+  box-shadow: 0 24px 64px -16px rgb(0 0 0 / 0.8);
+  overflow: auto;
+  overscroll-behavior: contain;
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity var(--dur-med) var(--ease-out),
+    transform var(--dur-med) var(--ease-out),
+    overlay var(--dur-med) allow-discrete,
+    display var(--dur-med) allow-discrete;
+}
+
+.app-dialog:not([open]) {
+  opacity: 0;
+  transform: translateY(12px) scale(0.98);
+}
+
+@starting-style {
+  .app-dialog[open] {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+}
+
+.app-dialog::backdrop {
+  background: rgb(8 6 12 / 0.75);
+  backdrop-filter: blur(4px);
+}
+
+.dialog-close {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--ink-600);
+  border-radius: 50%;
+  background: rgb(15 12 20 / 0.8);
+  cursor: pointer;
+  transition: border-color var(--dur-fast) var(--ease-out);
+}
+
+.dialog-close:hover {
+  border-color: var(--paper-dim);
+}
+

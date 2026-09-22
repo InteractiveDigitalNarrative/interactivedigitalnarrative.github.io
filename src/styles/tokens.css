@@ -19,7 +19,7 @@
   --on-gold: #1b1206;
 
   /* Type */
-  --font-display: 'Bodoni Moda', 'Didot', 'Bodoni 72', serif;
+  --font-display: 'Fraunces', Georgia, serif;
   --font-body: 'Hanken Grotesk', system-ui, sans-serif;
 
   --step--1: clamp(0.8rem, 0.78rem + 0.1vw, 0.875rem);

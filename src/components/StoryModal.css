@@ -1,0 +1,131 @@
+.story-modal {
+  width: min(52rem, calc(100vw - 2 * var(--space-4)));
+}
+
+.modal-panel {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+}
+
+.modal-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-body {
+  display: grid;
+  align-content: start;
+  gap: var(--space-3);
+  padding: var(--space-7) var(--space-6) var(--space-6);
+}
+
+.modal-body h2 {
+  font-size: var(--step-3);
+}
+
+.modal-tagline {
+  font-size: var(--step-1);
+}
+
+.modal-synopsis {
+  color: var(--paper-dim);
+  max-width: 60ch;
+}
+
+.modal-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: var(--space-1) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.modal-facts li {
+  padding: 2px var(--space-3);
+  border: 1px solid var(--ink-600);
+  border-radius: 999px;
+  color: var(--paper-dim);
+  font-size: var(--step--1);
+}
+
+.modal-facts .is-playable {
+  border-color: rgb(242 180 60 / 0.5);
+  color: var(--thread-gold);
+}
+
+.modal-endings {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  color: var(--thread-teal);
+  font-size: var(--step--1);
+  font-weight: 600;
+}
+
+.ending-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.ending-dots span {
+  width: 10px;
+  height: 10px;
+  border: 1.5px solid var(--thread-teal);
+  border-radius: 50%;
+}
+
+.ending-dots .is-found {
+  background: var(--thread-teal);
+}
+
+.modal-actions {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+
+.modal-guest {
+  color: var(--paper-faint);
+  font-size: var(--step--1);
+}
+
+.link-btn {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--thread-gold);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+/* Phones: poster becomes a banner (its main image sits in the top part) */
+@media (max-width: 640px) {
+  .modal-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-poster {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+  }
+
+  /* show the poster's middle band, where each key object sits */
+  .modal-poster img {
+    object-position: 50% 32%;
+  }
+
+  .modal-body {
+    padding: var(--space-5);
+  }
+
+  .modal-actions .btn {
+    flex: 1;
+    justify-content: center;
+  }
+}

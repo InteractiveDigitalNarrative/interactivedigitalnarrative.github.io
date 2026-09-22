@@ -55,7 +55,7 @@
 }
 
 .header-signin {
-  min-height: 40px;
+  min-height: 44px;
   padding: 0 var(--space-4);
 }
 
@@ -67,4 +67,74 @@
   .brand {
     margin-right: auto;
   }
+}
+
+/* Signed-in account button + menu (native popover) */
+.account-btn {
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+}
+
+.avatar {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--thread-teal);
+  color: var(--ink-900);
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  font-weight: 700;
+}
+
+.account-menu {
+  position: fixed;
+  inset: auto;
+  top: calc(var(--header-h) + var(--space-1));
+  right: var(--gutter);
+  margin: 0;
+  width: min(18rem, calc(100vw - 2 * var(--gutter)));
+  padding: var(--space-4);
+  border: 1px solid var(--ink-600);
+  border-radius: var(--radius-md);
+  background: var(--ink-800);
+  color: var(--paper);
+  box-shadow: var(--shadow-lift);
+}
+
+.account-hello {
+  margin-bottom: var(--space-2);
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  font-weight: 600;
+}
+
+.account-action + .account-action {
+  margin-top: var(--space-2);
+}
+
+.account-label {
+  color: var(--paper-faint);
+  font-size: var(--step--1);
+}
+
+.account-email {
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.account-action {
+  width: 100%;
+  justify-content: center;
+  margin-top: var(--space-4);
+}
+
+.account-note {
+  margin-top: var(--space-2);
+  color: var(--paper-faint);
+  font-size: 0.75rem;
 }

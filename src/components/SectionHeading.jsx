@@ -1,17 +1,17 @@
 import './SectionHeading.css'
 
-// Heading with the "branching path" rule under it: a line that forks,
-// the gold branch taken, the teal one left behind.
+// Heading with a book-style rule under it: small diamond, then a hairline
+// that ends where the heading text ends (matches the footer ornament).
 function SectionHeading({ id, children }) {
   return (
     <div className="section-heading">
       <h2 id={id}>{children}</h2>
-      <svg className="branch-rule" viewBox="0 0 240 24" fill="none" aria-hidden="true">
-        <path className="branch-rule-trunk" d="M1 12h150" />
-        <path className="branch-rule-taken" d="M150 12c24 0 28-9 52-9h36" />
-        <path className="branch-rule-other" d="M150 12c24 0 28 9 52 9h14" />
-        <circle className="branch-rule-knot" cx="150" cy="12" r="3" />
-      </svg>
+      <span className="heading-rule" aria-hidden="true">
+        <svg width="10" height="10" viewBox="0 0 10 10">
+          <path d="M5 1 9 5 5 9 1 5z" />
+        </svg>
+        <span className="heading-rule-line" />
+      </span>
     </div>
   )
 }

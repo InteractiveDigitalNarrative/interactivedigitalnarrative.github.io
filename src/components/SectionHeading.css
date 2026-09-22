@@ -1,5 +1,7 @@
+/* Shrinks to the heading's width so the rule matches the text */
 .section-heading {
-  display: grid;
+  display: inline-grid;
+  justify-self: start;
   gap: var(--space-2);
   margin-bottom: var(--space-4);
 }
@@ -8,40 +10,29 @@
   font-size: var(--step-2);
 }
 
-.branch-rule {
-  width: min(240px, 60vw);
-  height: auto;
-  overflow: visible;
+.heading-rule {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
 }
 
-.branch-rule path {
-  stroke-width: 1.5;
-  stroke-linecap: round;
-}
-
-.branch-rule-trunk {
-  stroke: var(--ink-600);
-}
-
-.branch-rule-taken {
+.heading-rule svg {
+  flex: none;
+  fill: none;
   stroke: var(--thread-gold);
-  stroke-dasharray: 100;
-  stroke-dashoffset: 0;
-  animation: branch-draw 900ms var(--ease-out) 200ms both;
+  stroke-width: 1.25;
 }
 
-.branch-rule-other {
-  stroke: var(--thread-teal);
-  opacity: 0.45;
-  stroke-dasharray: 3 5;
+.heading-rule-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, var(--thread-gold), var(--ink-600) 60%);
+  transform-origin: left;
+  animation: rule-draw 900ms var(--ease-out) 200ms both;
 }
 
-.branch-rule-knot {
-  fill: var(--paper);
-}
-
-@keyframes branch-draw {
+@keyframes rule-draw {
   from {
-    stroke-dashoffset: 100;
+    transform: scaleX(0);
   }
 }

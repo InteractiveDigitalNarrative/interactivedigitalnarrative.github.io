@@ -153,3 +153,37 @@ button {
 #root > main {
   flex: 1;
 }
+
+/* Themed text selection + scrollbars */
+::selection {
+  background: var(--thread-gold);
+  color: var(--on-gold);
+}
+
+html {
+  scrollbar-color: var(--ink-600) var(--ink-900);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ink-900);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ink-600);
+  border: 2px solid var(--ink-900);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--paper-faint);
+}
+
+/* In-page links land below the sticky header */
+[id] {
+  scroll-margin-top: calc(var(--header-h) + var(--space-4));
+}

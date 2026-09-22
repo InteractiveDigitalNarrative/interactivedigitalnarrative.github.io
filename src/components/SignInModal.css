@@ -1,0 +1,96 @@
+.sign-in-modal {
+  width: min(28rem, calc(100vw - 2 * var(--space-4)));
+}
+
+.sign-in-panel {
+  position: relative;
+  padding: var(--space-6);
+}
+
+.demo-tag {
+  display: inline-block;
+  margin-bottom: var(--space-4);
+  padding: 2px var(--space-2);
+  border: 1px solid var(--thread-teal);
+  border-radius: var(--radius-sm);
+  color: var(--thread-teal);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.sign-in-step {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.sign-in-step h2 {
+  font-size: var(--step-2);
+  padding-right: var(--space-7);
+}
+
+.sign-in-lead {
+  color: var(--paper-dim);
+}
+
+.sign-in-lead strong {
+  color: var(--paper);
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.field {
+  display: grid;
+  gap: var(--space-2);
+  font-size: var(--step--1);
+  font-weight: 600;
+}
+
+.field input {
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  padding: 0 var(--space-4);
+  border: 1px solid var(--ink-600);
+  border-radius: var(--radius-sm);
+  background: var(--ink-700);
+  color: var(--paper);
+  font: inherit;
+  font-size: var(--step-0);
+  font-weight: 400;
+}
+
+.field input::placeholder {
+  color: var(--paper-faint);
+}
+
+.field input:focus-visible {
+  outline-offset: 0;
+  border-color: var(--thread-gold);
+}
+
+.sign-in-submit {
+  justify-content: center;
+}
+
+.demo-note {
+  color: var(--paper-faint);
+  font-size: var(--step--1);
+}
+
+.text-btn {
+  justify-self: center;
+  min-height: 44px;
+  padding: 0 var(--space-3);
+  border: 0;
+  background: none;
+  color: var(--paper-dim);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.text-btn:hover {
+  color: var(--paper);
+}

@@ -1,0 +1,83 @@
+[
+  {
+    "id": "storm-alert",
+    "title": "Storm Alert",
+    "tagline": "A storm is coming. You have 72 hours to get ready.",
+    "synopsis": "Warnings are on the news and the shelves are emptying. Plan, pack and decide who to help before the power goes out. Your choices change how your family gets through the storm.",
+    "themes": [
+      "emergency-prep"
+    ],
+    "status": "playable",
+    "url": "/storm-alert/",
+    "durationMin": 20,
+    "endingsTotal": 4,
+    "endingsLabel": "outcomes",
+    "isNew": true,
+    "poster": "/art/poster-storm-alert.webp",
+    "hero": "/art/hero-storm-alert.webp"
+  },
+  {
+    "id": "idn-1",
+    "title": "IDN 1",
+    "tagline": "A town where the heat never breaks.",
+    "synopsis": "Placeholder story about living through a changing climate. Coming soon.",
+    "themes": [
+      "climate"
+    ],
+    "status": "coming_soon",
+    "url": null,
+    "durationMin": null,
+    "endingsTotal": null,
+    "isNew": true,
+    "poster": "/art/poster-idn-1.webp",
+    "hero": null
+  },
+  {
+    "id": "idn-2",
+    "title": "IDN 2",
+    "tagline": "One diagnosis. Many choices.",
+    "synopsis": "Placeholder story about health decisions and who you trust. Coming soon.",
+    "themes": [
+      "health"
+    ],
+    "status": "coming_soon",
+    "url": null,
+    "durationMin": null,
+    "endingsTotal": null,
+    "isNew": true,
+    "poster": "/art/poster-idn-2.webp",
+    "hero": null
+  },
+  {
+    "id": "idn-3",
+    "title": "IDN 3",
+    "tagline": "The message looked real.",
+    "synopsis": "Placeholder story about scams, privacy and staying safe online. Coming soon.",
+    "themes": [
+      "digital-safety"
+    ],
+    "status": "coming_soon",
+    "url": null,
+    "durationMin": null,
+    "endingsTotal": null,
+    "isNew": false,
+    "poster": "/art/poster-idn-3.webp",
+    "hero": null
+  },
+  {
+    "id": "idn-4",
+    "title": "IDN 4",
+    "tagline": "Your street, your call.",
+    "synopsis": "Placeholder story about neighbours working together. Coming soon.",
+    "themes": [
+      "community"
+    ],
+    "status": "coming_soon",
+    "url": null,
+    "durationMin": null,
+    "endingsTotal": null,
+    "isNew": false,
+    "poster": "/art/poster-idn-4.webp",
+    "hero": null
+  }
+]
