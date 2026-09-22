@@ -27,7 +27,7 @@ function PosterCard({ story, progress, onOpen }) {
         )}
       </span>
       <span className="poster-title">{story.title}</span>
-      <span className="poster-tagline">{story.tagline}</span>
+      {story.tagline && <span className="poster-tagline">{story.tagline}</span>}
       {story.skills?.length > 0 && <span className="poster-skills">{story.skills.join(' · ')}</span>}
     </button>
   )

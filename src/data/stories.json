@@ -25,7 +25,6 @@
   {
     "id": "idn-1",
     "title": "IDN 1",
-    "tagline": "A town where the heat never breaks.",
     "themes": [
       "heat"
     ],
@@ -45,7 +44,6 @@
   {
     "id": "idn-2",
     "title": "IDN 2",
-    "tagline": "The clinic is full. Who do you trust?",
     "themes": [
       "health"
     ],
@@ -65,7 +63,6 @@
   {
     "id": "idn-3",
     "title": "IDN 3",
-    "tagline": "The alert looked official.",
     "themes": [
       "scams-cyber"
     ],
@@ -85,7 +82,6 @@
   {
     "id": "idn-4",
     "title": "IDN 4",
-    "tagline": "The lights go out. The block stays together.",
     "themes": [
       "power-water",
       "community"

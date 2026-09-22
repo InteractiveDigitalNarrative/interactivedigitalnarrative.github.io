@@ -22,8 +22,8 @@ function Footer() {
             Prepare for the crisis <em>before it comes.</em>
           </p>
           <p className="footer-about">
-            Short interactive stories where you make the calls in a storm, a blackout or a heatwave, and learn what
-            keeps people safe.
+            Short interactive stories where you rehearse what to do in an emergency, so you are prepared when it
+            really happens.
           </p>
           <p className="footer-112">
             In an emergency, call <a href="tel:112">112</a>
