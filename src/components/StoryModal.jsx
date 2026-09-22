@@ -38,7 +38,7 @@ function StoryModal({ story, themes, progress, signedIn, onSignIn, onClose }) {
           <div className="modal-body">
             <h2 id="story-modal-title">{story.title}</h2>
             <p className="modal-tagline">{story.tagline}</p>
-            <p className="modal-synopsis">{story.synopsis}</p>
+            {story.synopsis && <p className="modal-synopsis">{story.synopsis}</p>}
             <SkillTags skills={story.skills} />
 
             <ul className="modal-facts">

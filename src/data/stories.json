@@ -26,7 +26,6 @@
     "id": "idn-1",
     "title": "IDN 1",
     "tagline": "A town where the heat never breaks.",
-    "synopsis": "Two weeks of record heat. Keep your home cool, get water to those who need it, and spot heatstroke in an older neighbour before it is too late. Coming soon.",
     "themes": [
       "heat"
     ],
@@ -47,7 +46,6 @@
     "id": "idn-2",
     "title": "IDN 2",
     "tagline": "The clinic is full. Who do you trust?",
-    "synopsis": "An outbreak shuts schools and empties pharmacy shelves, and rumours spread faster than the illness. Decide what to believe, what to stock and when to seek help. Coming soon.",
     "themes": [
       "health"
     ],
@@ -68,7 +66,6 @@
     "id": "idn-3",
     "title": "IDN 3",
     "tagline": "The alert looked official.",
-    "synopsis": "In the middle of a crisis, a text claims to be an official warning and asks you to tap a link. Check the source, protect your accounts and stop the scam spreading to your family. Coming soon.",
     "themes": [
       "scams-cyber"
     ],
@@ -89,7 +86,6 @@
     "id": "idn-4",
     "title": "IDN 4",
     "tagline": "The lights go out. The block stays together.",
-    "synopsis": "A winter blackout hits your whole district: no heating, no lift, no phone signal. Organise your stairwell, share what you have and find the neighbours who live alone. Coming soon.",
     "themes": [
       "power-water",
       "community"
