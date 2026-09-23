@@ -53,6 +53,9 @@ function Footer() {
           <span className="demo-dot" aria-hidden="true" />
           Demo build · sign-in and progress stay on this device
         </p>
+        <a className="footer-site" href="https://designstudio.ardin.online" target="_blank" rel="noopener">
+          designstudio.ardin.online
+        </a>
         <p className="footer-copy">© {new Date().getFullYear()}</p>
       </div>
     </footer>
