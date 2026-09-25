@@ -9,9 +9,9 @@
       "power-water"
     ],
     "skills": [
-      "Water",
-      "Light & radio",
-      "Keeping warm"
+      "Supplies",
+      "Power cut",
+      "Who to call"
     ],
     "status": "playable",
     "url": "/storm-alert/",
@@ -28,11 +28,6 @@
     "themes": [
       "heat"
     ],
-    "skills": [
-      "Heatstroke signs",
-      "Cooling a home",
-      "Checking on others"
-    ],
     "status": "coming_soon",
     "url": null,
     "durationMin": null,
@@ -46,11 +41,6 @@
     "title": "IDN 2",
     "themes": [
       "health"
-    ],
-    "skills": [
-      "Home medicine kit",
-      "Trusted sources",
-      "When to call for help"
     ],
     "status": "coming_soon",
     "url": null,
@@ -66,11 +56,6 @@
     "themes": [
       "scams-cyber"
     ],
-    "skills": [
-      "Spotting fake alerts",
-      "Protecting accounts",
-      "Warning others"
-    ],
     "status": "coming_soon",
     "url": null,
     "durationMin": null,
@@ -85,11 +70,6 @@
     "themes": [
       "power-water",
       "community"
-    ],
-    "skills": [
-      "Blackout plan",
-      "Sharing supplies",
-      "Helping neighbours"
     ],
     "status": "coming_soon",
     "url": null,
